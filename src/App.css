@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Matemasie&display=swap');
+
+*{
+  font-family: "Baskervville SC", serif;
+
+}
+
+body{
+  background-color: #2f3648;
+  background: url('/city1.jpg');
+  background-size: cover;
+
+}
+
+h2{
+  color: #fff;
+}
+
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #747979;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-item-header {
+  background-color: #1B9CFC;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  box-shadow: 5px;
+}
+
+.faq-item-header:hover {
+  background-color: #25CCF7;
+}
+
+.faq-item-body {
+  background-color: #fff;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-item.active .faq-item-body {
+  max-height: 500px; /* Set to a large enough value to accommodate content */
+}
+
+.faq-item-body-content {
+  padding: 15px;
+  color: #555;
+}
